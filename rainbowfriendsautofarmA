@@ -1,0 +1,53 @@
+local blockLoc = game:GetService("Workspace")
+local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
+local cframe = hum.CFrame
+
+hum.CFrame = blockLoc.Block1.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block2.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block3.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block4.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block5.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block6.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block7.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block8.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block9.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block10.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block11.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block12.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block13.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block14.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block15.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block16.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block17.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block18.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block19.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block20.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block21.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block22.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block23.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = blockLoc.Block24.TouchTrigger.CFrame
+task.wait(0.1)
+hum.CFrame = cframe
