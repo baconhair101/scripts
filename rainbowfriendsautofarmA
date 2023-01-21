@@ -1,6 +1,7 @@
 local blockLoc = game:GetService("Workspace")
 local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
 local cframe = hum.CFrame
+local theater = CFrame.new(372.565826, 44.7239647, 132.529053, -0.995400786, -4.78797553e-08, -0.0957982913, -5.31609778e-08, 1, 5.25763326e-08, 0.0957982913, 5.74272541e-08, -0.995400786)
 
 hum.CFrame = blockLoc.Block1.TouchTrigger.CFrame
 task.wait(0.1)
@@ -19,6 +20,7 @@ task.wait(0.1)
 hum.CFrame = blockLoc.Block8.TouchTrigger.CFrame
 task.wait(0.1)
 hum.CFrame = blockLoc.Block9.TouchTrigger.CFrame
+hum.CFrame = theater
 task.wait(0.1)
 hum.CFrame = blockLoc.Block10.TouchTrigger.CFrame
 task.wait(0.1)
@@ -39,6 +41,7 @@ task.wait(0.1)
 hum.CFrame = blockLoc.Block18.TouchTrigger.CFrame
 task.wait(0.1)
 hum.CFrame = blockLoc.Block19.TouchTrigger.CFrame
+hum.CFrame = theater
 task.wait(0.1)
 hum.CFrame = blockLoc.Block20.TouchTrigger.CFrame
 task.wait(0.1)
@@ -49,5 +52,6 @@ task.wait(0.1)
 hum.CFrame = blockLoc.Block23.TouchTrigger.CFrame
 task.wait(0.1)
 hum.CFrame = blockLoc.Block24.TouchTrigger.CFrame
+hum.CFrame = theater
 task.wait(0.1)
 hum.CFrame = cframe
