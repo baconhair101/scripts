@@ -119,10 +119,10 @@ local Fly = MainTab:CreateButton({
    Name = "Fly",
    Callback = function()
    -- The function that takes place when the button is pressed
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/baconhair101/scripts/main/wearedevsnet%20edited%20fly"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/baconhair101/scripts/main/selfmade%20prisonlife%20script"))()
    Rayfield:Notify({
    Title = "Fly",
-   Content = "E to enable/disable Fly",
+   Content = "X to enable/disable Fly",
    Duration = 3,
    Image = nil,
    Actions = { -- Notification Buttons
