@@ -1,0 +1,173 @@
+local DonateGui = Instance.new("ScreenGui")
+local DonateFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TpTool = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local InfYield = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local OpenClose = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+
+DonateGui.Name = "DonateGui"
+DonateGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DonateGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DonateFrame.Name = "DonateFrame"
+DonateFrame.Parent = DonateGui
+DonateFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+DonateFrame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+DonateFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DonateFrame.BorderSizePixel = 0
+DonateFrame.Position = UDim2.new(1.11699998, 0, 0.497999996, 0)
+DonateFrame.Size = UDim2.new(0.259615362, 0, 0.512195051, 0)
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = DonateFrame
+
+Title.Name = "Title"
+Title.Parent = DonateFrame
+Title.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Title.BackgroundTransparency = 0.500
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0.915344, 0, 0.147321448, 0)
+Title.Font = Enum.Font.FredokaOne
+Title.Text = "all games"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextStrokeTransparency = 0.000
+Title.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = Title
+
+TpTool.Name = "TpTool"
+TpTool.Parent = DonateFrame
+TpTool.AnchorPoint = Vector2.new(0.5, 0.5)
+TpTool.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+TpTool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TpTool.BorderSizePixel = 0
+TpTool.Position = UDim2.new(0.185185194, 0, 0.321428537, 0)
+TpTool.Size = UDim2.new(0.291005313, 0, 0.227678463, 0)
+TpTool.Font = Enum.Font.FredokaOne
+TpTool.Text = "tptool"
+TpTool.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpTool.TextScaled = true
+TpTool.TextSize = 14.000
+TpTool.TextStrokeTransparency = 0.000
+TpTool.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = TpTool
+
+InfYield.Name = "InfYield"
+InfYield.Parent = DonateFrame
+InfYield.AnchorPoint = Vector2.new(0.5, 0.5)
+InfYield.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+InfYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYield.BorderSizePixel = 0
+InfYield.Position = UDim2.new(0.646771014, 0, 0.321428537, 0)
+InfYield.Size = UDim2.new(0.460784018, 0, 0.227678463, 0)
+InfYield.Font = Enum.Font.FredokaOne
+InfYield.Text = "inf yield"
+InfYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfYield.TextScaled = true
+InfYield.TextSize = 14.000
+InfYield.TextStrokeTransparency = 0.000
+InfYield.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 15)
+UICorner_4.Parent = InfYield
+
+OpenClose.Name = "OpenClose"
+OpenClose.Parent = DonateGui
+OpenClose.AnchorPoint = Vector2.new(0.5, 0.5)
+OpenClose.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+OpenClose.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenClose.BorderSizePixel = 0
+OpenClose.Position = UDim2.new(0.997939587, 0, 0.498475641, 0)
+OpenClose.Size = UDim2.new(0.0219780188, 0, 0.512195051, 0)
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = OpenClose
+
+TextButton.Parent = OpenClose
+TextButton.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+TextButton.BackgroundTransparency = 0.500
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = " "
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 15)
+UICorner_6.Parent = TextButton
+
+
+local function ZKALNJB_fake_script()
+	local script = Instance.new('LocalScript', TpTool)
+
+	local button = script.Parent
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character or plr.CharacterAdded:Wait()
+	local tptool = button:WaitForChild("tptool")
+	
+	button.Activated:Connect(function()
+		if plr.Backpack:FindFirstChild("tptool") or chr:FindFirstChild("tptool") or plr.Backpack:FindFirstChild("tped") or chr:FindFirstChild("tped") then
+			-- nothing
+		else
+			local newTpTool = tptool:Clone()
+			newTpTool.Parent = plr.Backpack
+		end
+	end)
+end
+coroutine.wrap(ZKALNJB_fake_script)()
+local function SPXDGPB_fake_script()
+	local script = Instance.new('LocalScript', InfYield)
+
+	local button = script.Parent
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character or plr.CharacterAdded:Wait()
+	
+	button.Activated:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(SPXDGPB_fake_script)()
+local function ZPUH_fake_script()
+	local script = Instance.new('LocalScript', OpenClose)
+
+	local frame = script.Parent
+	local mainFrame = frame.Parent.DonateFrame
+	local button = frame:WaitForChild("TextButton")
+	local mainFrameOpen = false
+	local OpenMainFramePos = UDim2.new(0.87, 0,0.498)
+	local CloseMainFramePos = UDim2.new(1.117, 0,0.498)
+	local TS = game:GetService("TweenService")
+	local TI = TweenInfo.new(1, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out, 0, false, 0)
+	local deb = false
+	
+	button.Activated:Connect(function()
+		if not deb then
+			if mainFrameOpen then
+				mainFrameOpen = false
+				TS:Create(mainFrame, TI, {Position = CloseMainFramePos}):Play()
+			else
+				mainFrameOpen = true
+				TS:Create(mainFrame, TI, {Position = OpenMainFramePos}):Play()
+			end
+			deb = true
+			task.wait(1.15)
+			deb = false
+		end
+	end)
+end
+coroutine.wrap(ZPUH_fake_script)()
