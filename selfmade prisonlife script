@@ -115,7 +115,7 @@ local NoClip = MainTab:CreateToggle({
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Fly = MainTab:CreateButton({
    Name = "Fly",
    Callback = function()
    -- The function that takes place when the button is pressed
@@ -131,19 +131,8 @@ local Button = MainTab:CreateButton({
          Callback = function()
       end
    },
-},
+   },
 })
-   end,
-})
-
-local Fly = MainTab:CreateToggle({
-   Name = "Fly",
-   CurrentValue = false,
-   Flag = "FlyToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   -- The function that takes place when the toggle is pressed
-   -- The variable (Value) is a boolean on whether the toggle is true or false
-   
    end,
 })
 
